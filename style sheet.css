@@ -122,10 +122,6 @@ body {
   padding: 14px 20px;
 }
 
-.toggle-checkbox {
-  display: none;
-}
-
 @media screen and (max-width: 768px) {
   .navbar {
       display: none;
@@ -152,10 +148,6 @@ body {
 
   .hamburger {
       display: block;
-  }
-
-  .toggle-checkbox:checked + .hamburger + .navbar {
-      display: flex;
   }
 }
 /* Searchbar Styling */
