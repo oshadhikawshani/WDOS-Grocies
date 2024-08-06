@@ -51,5 +51,6 @@ document.addEventListener('DOMContentLoaded', loadCart);
 
 function placingcart  (){
     const carttable = document.getElementById
+        alert('Your order has been placed successfully!');
 
 }
