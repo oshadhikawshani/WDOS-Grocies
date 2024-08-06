@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dairy product page Grocies </title>
+    <link rel="stylesheet" href="style sheet.css">
+    <script src="https://kit.fontawesome.com/f348914ef2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <img src="image/logo.jpeg" class="logo"> 
+        <nav class="navbar">
+            <a href="index.html">HOME</a> 
+            <a href="about pg.html">ABOUT</a>
+            <a href="product link page.html">PRODUCTS</a>
+            <a href="order page.html">ORDER</a>
+            <a href="loyalty pg.html">LOYALTY REGISTRATION</a>
+        </nav>  
+
+            
+        <div class="icons">
+            <a href="cart.html" > <img src="image/Cart.png"  class="icons_img_w_h"></a>
+           
+            <a href="loyalty pg.html"> <img src="image/User.png" alt="User" class="icons_img_w_h"></a>
+        </div>
+
+        
+        <div id="cart-container"></a>
+        </div>
+</header>
+<section class="searchbar">
+<form>
+    <input type="text" placeholder="Search..." >
+    <button type="submdrit">GO</button>
+</form>
+</section>
+<main>
+<section>
+    <div class="daily_header">
+      <h1 id="category">Your Shopping Cart</h1>
+    </div>
+    <br>       
+</section>
+<br> <br> 
+
+<section>
+        <!-- Cart Table -->
+        <table id="cart-table" class="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <table id="cart-table" class="cart-table">
+            <tbody>
+                <tr>
+                    <td colspan="5" style="text-align: right;">Total: Rs <span id="orderTotal">0.00</span></td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <td colspan="5" style="text-align: right;"><button id="add-to-favorites-btn"  class="add-to-cart">Checkout</button></td>
+                </tr>
+            </tbody>            
+        </table>
+        
+    <div>
+        
+        
+    </div>
+
+
+
+<div class="products" id="product-list"></div>
+  <script src="js/buynow_script.js"></script>  
+</main>
+
+</section>
+
+<br> <br>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-about">
+            <h2>About Grocies</h2>
+            <p>Grocies Supermarket is dedicated to providing the best quality products and exceptional customer service. Your friendly neighborhood grocery store for all your needs.</p>
+        </div>
+
+        <div class="footer-contact">
+            <h2>Contact Us</h2>
+            <ul>
+                <li>Email: support@grocies.com</li>
+                <li>Phone: +123-456-7890</li>
+                <li>Address: 123 Grocery Street, Market City</li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h2>Follow Us</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" class="icon-link"><i class="fa fa-facebook fa-2x"></i></a>
+                <a href="https://x.com/i/flow/login" class="icon-link"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="https://www.instagram.com/" class="icon-link"><i class="fa fa-instagram fa-2x"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Grocies. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
