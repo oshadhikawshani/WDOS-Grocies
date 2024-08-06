@@ -136,10 +136,6 @@ body {
       border-top: 1px solid #ddd;
   }
 
-  .dropdown:hover .dropdown-content {
-      display: none;
-  }
-
   .dropdown-content {
       position: static;
       width: 100%;
@@ -150,6 +146,7 @@ body {
       display: block;
   }
 }
+
 /* Searchbar Styling */
 .searchbar {
   background-color: var(--white_color);
