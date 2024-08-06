@@ -1,8 +1,8 @@
-document.getElementById('hamburger').addEventListener('click', function() {
+document.getElementById('toggle').addEventListener('change', function() {
     var navbar = document.getElementById('navbar');
-    if (navbar.style.display === 'flex') {
-        navbar.style.display = 'none';
-    } else {
+    if (this.checked) {
         navbar.style.display = 'flex';
+    } else {
+        navbar.style.display = 'none';
     }
 });
