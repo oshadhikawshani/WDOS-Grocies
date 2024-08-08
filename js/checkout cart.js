@@ -44,13 +44,36 @@ function loadCart() {
     document.getElementById("orderTotal").textContent = `Total: Rs ${total.toFixed(2)}`;
 }
 
+// Function to calculate the delivery date
+function calculateDeliveryDate() {
+    const currentDate = new Date();
+    const deliveryDate = new Date();
+    deliveryDate.setDate(currentDate.getDate() + 3); // Assuming 3 days for delivery
+    return deliveryDate.toDateString();
+}
+
+// Function to validate the form and display a thank you message
+function placeOrder() {
+    const fname = document.getElementById('fname').value;
+    const lname = document.getElementById('lname').value;
+    const tel = document.getElementById('tel').value;
+    const gmail = document.getElementById('gmail').value;
+    const address = document.getElementById('address').value;
+    const zipcode = document.getElementById('zipcode').value;
+    const cardnumber = document.getElementById('cardnumber').value;
+    const expireDate = document.getElementById('expire-date').value;
+    const password = document.getElementById('password').value;
+
+    if (fname && lname && tel && gmail && address && zipcode && cardnumber && expireDate && password) {
+        const deliveryDate = calculateDeliveryDate();
+        alert(`Thank you for your purchase! Your order will be delivered by ${deliveryDate}.`);
+    } else {
+        alert('Please fill in all the required fields.');
+    }
+}
+
 // Call loadCart to display the cart when the page loads
 document.addEventListener('DOMContentLoaded', loadCart);
 
-
-
-function placingcart  (){
-    const carttable = document.getElementById
-        alert('Your order has been placed successfully!');
-
-}
+// Add event listener to the "Place The Order" button
+document.getElementById('placeOrderButton').addEventListener('click', placeOrder);
